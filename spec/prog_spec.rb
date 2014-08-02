@@ -12,4 +12,8 @@ describe 'number_text' do
   it 'will change the digit 1000000000000 to the string "one trillion"' do
     expect(number_text(1000000000000)).to(eq('one trillion'))
   end
+  
+  it 'will change the digit 500 to the string "five hundred"' do
+    expect(number_text(500)).to(eq('five hundred'))
+  end
 end
