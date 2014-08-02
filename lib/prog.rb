@@ -1,5 +1,10 @@
 def number_text(number)
-  number_list = { "hundred"=> 100, "ten"=> 10, "one" => 1}
+  number_list = { "one trillion" =>1000000000000, "one billion" =>1000000000, " one hundred"=> 100, "ten"=> 10, "one" => 1}
+
+  # number_split = number.split('')
+  # if number_split.length = 13
+  #   trillion
+  # # number_list = { "hundred"=> 100, "ten"=> 10, "one" => 1}
   my_number = []
 
   number_list.each do |key, value|
