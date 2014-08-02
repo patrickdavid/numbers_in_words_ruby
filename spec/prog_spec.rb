@@ -2,6 +2,9 @@ require 'rspec'
 require 'prog'
 
 describe 'number_text' do
+  it 'will tell you to choose a number less then a tillion if you enter a number over that amount' do
+    expect(number_text(1000000000001)).to(eq('number is too high, please enter a number less than a trillion'))
+  end  
   it 'will change the digit 1 to the string "one"' do
     expect(number_text(1)).to(eq('one'))
   end
@@ -13,7 +16,7 @@ describe 'number_text' do
     expect(number_text(1000000000000)).to(eq('one trillion'))
   end
   
-  it 'will change the digit 500 to the string "five hundred"' do
-    expect(number_text(500)).to(eq('five hundred'))
+  it 'will change the digit 80000 to the string "eighty thousand"' do
+    expect(number_text(80000)).to(eq('eighty thousand'))
   end
 end
